@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Playfair_Display } from 'next/font/google'
 import './globals.css'
+import Navbar from '@/app/componentes/Navbar'
+import Footer from '@/app/componentes/Footer'
 
 const playfair_Display = Playfair_Display({ subsets: ['latin'], weight: ["400", "500", "800"], variable: "--font-playFair_display" })
 export const metadata: Metadata = {
@@ -15,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair_Display.variable}`}>
-      <body className="bg-black text-white">{children}</body>
+      <body className="bg-black text-white">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
