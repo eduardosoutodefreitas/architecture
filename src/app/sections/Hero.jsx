@@ -14,7 +14,7 @@ const Hero = () => {
           <Button title="Free Consultation" />
         </div>
         <div>
-          <Image src={img} alt="Hero Image" />
+          <Image className="rounded-md" src={img} alt="Hero Image" />
         </div>
       </div>
     </div>
