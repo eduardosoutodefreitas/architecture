@@ -9,9 +9,9 @@ const Gallery = () => {
             <p className='text-4xl font-playFair font-medium'>Build professional valuable room</p>
         </div>
         <div className='flex flex-col items-center md:flex-row md:justify-between gap-5'>
-            <div><Image src={img1} alt='image house 1'/></div>
-            <div><Image src={img2} alt='image house 2'/></div>
-            <div><Image src={img3} alt='image house 3'/></div>
+            <div><Image className="rounded-md" src={img1} alt='image house 1'/></div>
+            <div><Image className="rounded-md" src={img2} alt='image house 2'/></div>
+            <div><Image className="rounded-md" src={img3} alt='image house 3'/></div>
         </div>
     </div>
   )
